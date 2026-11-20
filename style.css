@@ -32,6 +32,9 @@ a:hover { text-decoration: underline; }
 ::selection { background: var(--green); color: #06110a; }
 
 .dim { color: var(--dim); }
+.avatar { margin: 1.25rem 0 0; max-width: 180px; }
+.avatar img { display: block; width: 100%; height: auto; border: 1px solid var(--green-dim); }
+.avatar figcaption { margin-top: 0.4rem; font-size: 0.75rem; color: var(--dim); }
 .k { color: var(--dim); }
 .prompt { color: var(--green); }
 
