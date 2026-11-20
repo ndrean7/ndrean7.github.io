@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>0xndrean7 // AI agent builder</title>
 <meta name="description" content="0xndrean7 — AI agent builder from Indonesia. Audit skills, testing skills, trading analysis, and bug-hunting kits.">
+<script>document.documentElement.classList.add("js");</script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,12 +26,12 @@
   <section class="hero" id="hero">
     <p class="sec-label">001 // HERO</p>
     <p class="prompt-line"><span class="prompt">$</span> <span id="typed"></span><span class="cursor" aria-hidden="true"></span></p>
-    <figure class="avatar">
+    <figure class="avatar hero-anim" style="--hd:.05s">
       <img src="avatar.jpg" alt="0xndrean7" width="736" height="735">
       <figcaption>avatar.jpg // 0xndrean7</figcaption>
     </figure>
-    <h1>0xndrean7</h1>
-    <p class="tagline">AI agent builder from Indonesia.</p>
+    <h1 class="hero-anim" style="--hd:.18s">0xndrean7</h1>
+    <p class="tagline hero-anim" style="--hd:.3s">AI agent builder from Indonesia.</p>
     <p class="bio">I build AI agents and skills — security audits, testing, trading analysis — and I farm airdrops and testnets on the side.</p>
     <ul class="status">
       <li><span class="k">STATUS</span><span class="v">4 SKILLS LIVE ON AGENSI</span></li>
@@ -46,13 +47,13 @@
   </section>
 
   <!-- 002 SKILLS -->
-  <section id="skills">
+  <section id="skills" class="reveal">
     <p class="sec-label">002 // SKILLS</p>
     <h2>Skills<span class="dim">.</span></h2>
     <p class="sec-intro">Agent skills I built and ship. Each one has its own page — Agensi listing and GitHub repo.</p>
 
     <div class="cards">
-      <article class="card">
+      <article class="card reveal">
         <p class="card-top"><span class="card-id">SKILL_01</span><span class="price free">FREE</span></p>
         <h3>Audit Forge</h3>
         <p>Foundry-first smart contract auditor. Scope a codebase, review by hand, prove every finding with a local Foundry PoC.</p>
@@ -62,7 +63,7 @@
         </p>
       </article>
 
-      <article class="card">
+      <article class="card reveal">
         <p class="card-top"><span class="card-id">SKILL_02</span><span class="price free">FREE</span></p>
         <h3>TestForge</h3>
         <p>Find untested code, write tests that catch bugs. Foundry + Node test-runner skill for agents that ship code.</p>
@@ -72,7 +73,7 @@
         </p>
       </article>
 
-      <article class="card">
+      <article class="card reveal">
         <p class="card-top"><span class="card-id">SKILL_03</span><span class="price paid">$10</span></p>
         <h3>Audit Forge Pro</h3>
         <p>Deeper audit coverage, DeFi attacks, PoCs with measured impact. For audits where the cheap pass is not enough.</p>
@@ -82,7 +83,7 @@
         </p>
       </article>
 
-      <article class="card">
+      <article class="card reveal">
         <p class="card-top"><span class="card-id">SKILL_04</span><span class="price paid">$10</span></p>
         <h3>ChartForge</h3>
         <p>Read the chart, size the risk, write the plan. Trading analysis skill — framework, not financial advice.</p>
@@ -92,7 +93,7 @@
         </p>
       </article>
 
-      <article class="card">
+      <article class="card reveal">
         <p class="card-top"><span class="card-id">SKILL_05</span><span class="price free">FREE</span></p>
         <h3>bug-hunter-kit</h3>
         <p>Bug-hunting skill bundle for AI coding agents. Scope, hunt the vuln, prove it with a Foundry PoC, write the report.</p>
@@ -105,13 +106,13 @@
   </section>
 
   <!-- 003 PROJECTS -->
-  <section id="projects">
+  <section id="projects" class="reveal">
     <p class="sec-label">003 // PROJECTS</p>
     <h2>Projects<span class="dim">.</span></h2>
     <p class="sec-intro">Pinned work. One runs live in your browser — tap the card to open it.</p>
 
     <div class="cards">
-      <article class="card">
+      <article class="card reveal">
         <p class="card-top"><span class="card-id">PROJ_01</span><span class="live">LIVE</span></p>
         <h3>virtual-team-office</h3>
         <p>Isometric virtual office — the 9-role AI team works a sprint, live in your browser. 3D, day cycle, real office motion.</p>
@@ -121,7 +122,7 @@
         </p>
       </article>
 
-      <article class="card">
+      <article class="card reveal">
         <p class="card-top"><span class="card-id">PROJ_02</span><span class="price free">FREE</span></p>
         <h3>audit-forge</h3>
         <p>Foundry-first smart contract auditor skill. The repo behind the Agensi listing.</p>
@@ -131,7 +132,7 @@
         </p>
       </article>
 
-      <article class="card">
+      <article class="card reveal">
         <p class="card-top"><span class="card-id">PROJ_03</span><span class="price free">FREE</span></p>
         <h3>testforge</h3>
         <p>Test-gap skill for agents. Find the code nobody tested and write tests that actually catch bugs.</p>
@@ -141,7 +142,7 @@
         </p>
       </article>
 
-      <article class="card">
+      <article class="card reveal">
         <p class="card-top"><span class="card-id">PROJ_04</span><span class="price paid">$10</span></p>
         <h3>audit-forge-pro</h3>
         <p>Deep-coverage audit skill. Economic attacks, oracle and flash-loan chains, proxy risk, measured PoCs.</p>
@@ -151,7 +152,7 @@
         </p>
       </article>
 
-      <article class="card">
+      <article class="card reveal">
         <p class="card-top"><span class="card-id">PROJ_05</span><span class="price paid">$10</span></p>
         <h3>chartforge</h3>
         <p>Trading analysis skill for agents. Read the chart, size the risk, write the plan.</p>
@@ -161,7 +162,7 @@
         </p>
       </article>
 
-      <article class="card">
+      <article class="card reveal">
         <p class="card-top"><span class="card-id">PROJ_06</span><span class="price free">FREE</span></p>
         <h3>bug-hunter-kit</h3>
         <p>Bug-hunting skill bundle for AI coding agents. Scope, vulns, Foundry PoC, report, recon — plus templates.</p>
@@ -173,7 +174,7 @@
   </section>
 
   <!-- 004 STACK -->
-  <section id="stack">
+  <section id="stack" class="reveal">
     <p class="sec-label">004 // STACK</p>
     <h2>Stack<span class="dim">.</span></h2>
     <p class="sec-intro">What I actually build with — nothing listed that I have not used.</p>
@@ -189,7 +190,7 @@
   </section>
 
   <!-- 005 CONTACT -->
-  <section id="contact">
+  <section id="contact" class="reveal">
     <p class="sec-label">005 // CONTACT</p>
     <h2>Contact<span class="dim">.</span></h2>
     <p class="prompt-line"><span class="prompt">$</span> ./reach --to 0xndrean7</p>
