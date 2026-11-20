@@ -97,9 +97,30 @@ h3 { font-size: 1.05rem; margin-bottom: 6px; }
   animation: blink 1s steps(1) infinite;
 }
 @keyframes blink { 50% { opacity: 0; } }
+
+/* ---- motion: transform + opacity only. Hidden state applies only
+   once JS adds .js to <html>, so content stays visible without JS. ---- */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity .6s ease var(--rd, 0s), transform .6s ease var(--rd, 0s);
+}
+.js .reveal.in { opacity: 1; transform: translateY(0); }
+
+/* hero entrance: avatar, name, tagline — staggered on load */
+.js .hero-anim {
+  opacity: 0;
+  transform: translateY(14px);
+  animation: heroIn .7s cubic-bezier(.22, .61, .36, 1) forwards;
+  animation-delay: var(--hd, 0s);
+}
+@keyframes heroIn { to { opacity: 1; transform: translateY(0); } }
+
 @media (prefers-reduced-motion: reduce) {
   .cursor { animation: none; }
   html { scroll-behavior: auto; }
+  .js .reveal, .js .hero-anim { opacity: 1 !important; transform: none !important; animation: none !important; transition: none !important; }
+  .card:hover, .btn:hover, .contact-links a:hover { transform: none !important; box-shadow: none !important; }
 }
 
 .tagline { font-size: 1.15rem; color: var(--green); }
@@ -126,8 +147,13 @@ h3 { font-size: 1.05rem; margin-bottom: 6px; }
   border: 1px solid var(--green-dim);
   color: var(--green);
   font-size: 0.9rem;
+  transition: transform .18s ease, background-color .18s ease, color .18s ease;
 }
 .btn:hover { background: var(--green); color: #06110a; text-decoration: none; }
+.btn:active { transform: scale(.97); }
+@media (hover: hover) {
+  .btn:hover { transform: translateY(-2px); }
+}
 
 /* cards */
 .cards {
@@ -139,8 +165,12 @@ h3 { font-size: 1.05rem; margin-bottom: 6px; }
   background: var(--panel);
   border: 1px solid var(--line);
   padding: 18px;
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
 }
 .card:hover { border-color: var(--green-dim); }
+@media (hover: hover) {
+  .card:hover { transform: translateY(-4px); box-shadow: 0 10px 28px rgba(61, 255, 122, 0.08); }
+}
 .card p { color: var(--dim); font-size: 0.92rem; }
 .card h3 { color: var(--text); }
 .card-top {
@@ -175,8 +205,12 @@ h3 { font-size: 1.05rem; margin-bottom: 6px; }
   padding: 12px 14px;
   border: 1px solid var(--line);
   background: var(--panel);
+  transition: transform .2s ease, border-color .2s ease;
 }
 .contact-links a:hover { border-color: var(--green-dim); text-decoration: none; }
+@media (hover: hover) {
+  .contact-links a:hover { transform: translateY(-2px); }
+}
 
 /* footer */
 footer {
