@@ -9,6 +9,8 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<canvas id="bg3d" aria-hidden="true"></canvas>
+<div class="bg-shade" aria-hidden="true"></div>
 
 <header class="topbar">
   <a class="brand" href="#top">0xndrean7<span class="dim">.dev</span></a>
@@ -32,10 +34,11 @@
     </figure>
     <h1 class="hero-anim" style="--hd:.18s">0xndrean7</h1>
     <p class="tagline hero-anim" style="--hd:.3s">AI agent builder from Indonesia.</p>
-    <p class="bio">I build AI agents and skills — security audits, testing, trading analysis — and I farm airdrops and testnets on the side.</p>
+    <p class="bio">I build AI agents and skills — security audits, testing, trading analysis — plus 3D web, games, and virtual-office tools. I farm airdrops and testnets on the side.</p>
     <ul class="status">
       <li><span class="k">STATUS</span><span class="v">4 SKILLS LIVE ON AGENSI</span></li>
-      <li><span class="k">FOCUS</span><span class="v">AUDIT / TEST / TRADE</span></li>
+      <li><span class="k">PROJECTS</span><span class="v">6 PINNED — 2 LIVE SITES</span></li>
+      <li><span class="k">FOCUS</span><span class="v">AUDIT / BUILD / 3D WEB</span></li>
       <li><span class="k">BASE</span><span class="v">INDONESIA</span></li>
     </ul>
     <p class="evidence"><span class="k">EVIDENCE</span> Relay audit — HIGH report sent 2026-11-19 with a passing PoC, 5 MEDIUMs PoC-verified.</p>
@@ -109,7 +112,7 @@
   <section id="projects" class="reveal">
     <p class="sec-label">003 // PROJECTS</p>
     <h2>Projects<span class="dim">.</span></h2>
-    <p class="sec-intro">Pinned work. One runs live in your browser — tap the card to open it.</p>
+    <p class="sec-intro">Pinned work — the live ones open right in your browser. Skills live in 002 above, not repeated here.</p>
 
     <div class="cards">
       <article class="card reveal">
@@ -123,51 +126,48 @@
       </article>
 
       <article class="card reveal">
-        <p class="card-top"><span class="card-id">PROJ_02</span><span class="price free">FREE</span></p>
-        <h3>audit-forge</h3>
-        <p>Foundry-first smart contract auditor skill. The repo behind the Agensi listing.</p>
+        <p class="card-top"><span class="card-id">PROJ_02</span><span class="live">LIVE</span></p>
+        <h3>websites-in-2026</h3>
+        <p>Showcase of three animated 2026-style websites in one page: OHO Energy 3D cans, Emons isometric logistics, Ortoo minimal AI product.</p>
         <p class="card-links">
-          <a href="https://www.agensi.io/skills/audit-forge" target="_blank" rel="noopener">AGENSI -&gt;</a>
-          <a href="https://github.com/ndrean7/audit-forge" target="_blank" rel="noopener">GITHUB -&gt;</a>
+          <a href="https://ndrean7.github.io/websites-in-2026/" target="_blank" rel="noopener">OPEN SITE -&gt;</a>
+          <a href="https://github.com/ndrean7/websites-in-2026" target="_blank" rel="noopener">GITHUB -&gt;</a>
         </p>
       </article>
 
       <article class="card reveal">
         <p class="card-top"><span class="card-id">PROJ_03</span><span class="price free">FREE</span></p>
-        <h3>testforge</h3>
-        <p>Test-gap skill for agents. Find the code nobody tested and write tests that actually catch bugs.</p>
+        <h3>virtual-team-skills</h3>
+        <p>9-role AI team for coding agents — CEO, planner, builder, reviewer, QA, security, release. Each role checks the next one's work.</p>
         <p class="card-links">
-          <a href="https://www.agensi.io/skills/testforge" target="_blank" rel="noopener">AGENSI -&gt;</a>
-          <a href="https://github.com/ndrean7/testforge" target="_blank" rel="noopener">GITHUB -&gt;</a>
+          <a href="https://github.com/ndrean7/virtual-team-skills" target="_blank" rel="noopener">GITHUB -&gt;</a>
         </p>
       </article>
 
       <article class="card reveal">
-        <p class="card-top"><span class="card-id">PROJ_04</span><span class="price paid">$10</span></p>
-        <h3>audit-forge-pro</h3>
-        <p>Deep-coverage audit skill. Economic attacks, oracle and flash-loan chains, proxy risk, measured PoCs.</p>
+        <p class="card-top"><span class="card-id">PROJ_04</span><span class="price free">FREE</span></p>
+        <h3>neon-rush</h3>
+        <p>Fast Godot 4 arcade game: pilot a glowing ship, collect energy orbs, dodge the drone swarm. All sprites generated in code.</p>
         <p class="card-links">
-          <a href="https://www.agensi.io/skills/audit-forge-pro" target="_blank" rel="noopener">AGENSI -&gt;</a>
-          <a href="https://github.com/ndrean7/audit-forge-pro" target="_blank" rel="noopener">GITHUB -&gt;</a>
+          <a href="https://github.com/ndrean7/neon-rush" target="_blank" rel="noopener">GITHUB -&gt;</a>
         </p>
       </article>
 
       <article class="card reveal">
-        <p class="card-top"><span class="card-id">PROJ_05</span><span class="price paid">$10</span></p>
-        <h3>chartforge</h3>
-        <p>Trading analysis skill for agents. Read the chart, size the risk, write the plan.</p>
+        <p class="card-top"><span class="card-id">PROJ_05</span><span class="price free">FREE</span></p>
+        <h3>virtual-office-starter</h3>
+        <p>Spreadsheet + document editor on one page, built on the Univer SDK. Vite + TypeScript, runs fully in the browser.</p>
         <p class="card-links">
-          <a href="https://www.agensi.io/skills/chartforge" target="_blank" rel="noopener">AGENSI -&gt;</a>
-          <a href="https://github.com/ndrean7/chartforge" target="_blank" rel="noopener">GITHUB -&gt;</a>
+          <a href="https://github.com/ndrean7/virtual-office-starter" target="_blank" rel="noopener">GITHUB -&gt;</a>
         </p>
       </article>
 
       <article class="card reveal">
         <p class="card-top"><span class="card-id">PROJ_06</span><span class="price free">FREE</span></p>
-        <h3>bug-hunter-kit</h3>
-        <p>Bug-hunting skill bundle for AI coding agents. Scope, vulns, Foundry PoC, report, recon — plus templates.</p>
+        <h3>android-mirror-kit</h3>
+        <p>Mirror and control an Android phone from a PC with scrcpy / QtScrcpy. No root, no shady apps — guide + helper scripts.</p>
         <p class="card-links">
-          <a href="https://github.com/ndrean7/bug-hunter-kit" target="_blank" rel="noopener">GITHUB -&gt;</a>
+          <a href="https://github.com/ndrean7/android-mirror-kit" target="_blank" rel="noopener">GITHUB -&gt;</a>
         </p>
       </article>
     </div>
@@ -185,6 +185,7 @@
       <li><span class="k">NODE.JS</span><span class="v">TOOLING</span></li>
       <li><span class="k">PYTHON</span><span class="v">SCRIPTS + BOTS</span></li>
       <li><span class="k">THREE.JS</span><span class="v">3D WEB</span></li>
+      <li><span class="k">GODOT 4</span><span class="v">2D GAMES</span></li>
       <li><span class="k">GIT + GITHUB</span><span class="v">VERSION CONTROL</span></li>
     </ul>
   </section>
